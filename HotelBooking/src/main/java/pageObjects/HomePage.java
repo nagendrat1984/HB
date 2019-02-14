@@ -27,7 +27,6 @@ public class HomePage {
 		
 		public void zoomInZoomOut(){
 			 JavascriptExecutor js = (JavascriptExecutor) driver;
-			 //String FileReaderManager.getInstance().getConfigReader().getZoomSize()
 			 js.executeScript("document.body.style.zoom='" + FileReaderManager.getInstance().getConfigReader().getZoomSize() +"'");
 		}
 		
