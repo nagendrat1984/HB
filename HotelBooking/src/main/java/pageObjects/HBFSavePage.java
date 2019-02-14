@@ -90,8 +90,8 @@ public class HBFSavePage {
 		enter_DateInCheckIn(CheckIn);
 		enter_DateInCheckOut(CheckOut);
 	}
-	
-	
-	
+
+
+
 
 }

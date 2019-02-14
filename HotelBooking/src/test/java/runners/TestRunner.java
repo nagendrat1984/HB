@@ -6,7 +6,7 @@ import com.cucumber.listener.Reporter;
 import cucumber.api.CucumberOptions;
 //import cucumber.api.junit.Cucumber;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
-import managers.FileReaderManager;
+import managers.FileReaderEEManager;
 
 
 @CucumberOptions(
@@ -18,6 +18,6 @@ import managers.FileReaderManager;
 public class TestRunner extends AbstractTestNGCucumberTests{
 	@AfterClass
 	public static void writeExtentReport() {
-		Reporter.loadXMLConfig(new File(FileReaderManager.getInstance().getConfigReader().getReportConfigPath()));
+		Reporter.loadXMLConfig(new File(FileReaderEEManager.getInstance().getEEConfigReader().getReportConfigPath()));
 	}	
 }

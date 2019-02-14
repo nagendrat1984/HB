@@ -1,24 +1,24 @@
 package cucumber;
 
-import managers.PageObjectManager;
-import managers.WebDriverManager;
+import managers.PageObjectEEManager;
+import managers.WebDriverEEManager;
 
 public class TestContext {
-	private WebDriverManager webDriverManager;
-	private PageObjectManager pageObjectManager;
+	private WebDriverEEManager webDriverEEManager;
+	private PageObjectEEManager pageObjectEEManager;
 
 
 	public TestContext(){
-		webDriverManager = new WebDriverManager();
-		pageObjectManager = new PageObjectManager(webDriverManager.getDriver());
+		webDriverEEManager = new WebDriverEEManager();
+		pageObjectEEManager = new PageObjectEEManager(webDriverEEManager.getEEDriver());
 	}
 
-	public WebDriverManager getWebDriverManager() {
-		return webDriverManager;
+	public WebDriverEEManager getWebDriverEEManager() {
+		return webDriverEEManager;
 	}
 
-	public PageObjectManager getPageObjectManager() {
-		return pageObjectManager;
+	public PageObjectEEManager getPageObjectEEManager() {
+		return pageObjectEEManager;
 	}
 
 

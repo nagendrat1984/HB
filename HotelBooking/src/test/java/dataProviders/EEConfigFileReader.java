@@ -5,19 +5,16 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
-
-import org.openqa.selenium.JavascriptExecutor;
-
 import enums.DriverType;
 import enums.EnvironmentType;
 
-public class ConfigFileReader {
+public class EEConfigFileReader {
 
 	private Properties properties;
 	private final String propertyFilePath= "configs//Configuration.properties";
 
 
-	public ConfigFileReader(){
+	public EEConfigFileReader(){
 		BufferedReader reader;
 		try {
 			reader = new BufferedReader(new FileReader(propertyFilePath));
@@ -54,14 +51,14 @@ public class ConfigFileReader {
 		if(url != null) return url;
 		else throw new RuntimeException("url not specified in the Configuration.properties file.");
 	}
-	
+
 	public String getZoomSize() {
 		String zoom = properties.getProperty("zoomsize");
 		if(zoom != null) return zoom;
 		else throw new RuntimeException("Zoom not specified in the Configuration.properties file.");
 	}
-	
-	
+
+
 	public DriverType getBrowser() {
 		String browserName = properties.getProperty("browser");
 		if(browserName == null || browserName.equals("chrome")) return DriverType.CHROME;

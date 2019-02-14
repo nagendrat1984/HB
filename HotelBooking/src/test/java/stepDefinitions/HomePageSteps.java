@@ -9,15 +9,15 @@ Navigating to a web page would generally happen in @Before annotation.
 Since There is no login in this application form I am using navigating to home page as a separate step definition.*/
 
 public class HomePageSteps {
-	
+
 	TestContext testContext;
 	HomePage homePage;
-	
+
 	public HomePageSteps(TestContext context) {
-		 testContext = context;
-		 homePage = testContext.getPageObjectManager().getHomePage();
+		testContext = context;
+		homePage = testContext.getPageObjectEEManager().getHomePage();
 	}
-	
+
 	@Given("^EE: I navigate to the EE page$")
 	public void ee_I_navigate_to_the_EE_page() throws Throwable {
 
@@ -25,6 +25,6 @@ public class HomePageSteps {
 		homePage.zoomInZoomOut();
 
 	}
-	
+
 
 }

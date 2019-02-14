@@ -5,14 +5,14 @@ import pageObjects.HBFSavePage;
 import pageObjects.HBFDeletePage;
 import pageObjects.HomePage;
 
-public class PageObjectManager {
+public class PageObjectEEManager {
 
 	private WebDriver driver;
 	private HBFSavePage hbfsavepage;
 	private HBFDeletePage hbfdeletepage;
 	private HomePage homePage;
 
-	public PageObjectManager(WebDriver driver) {
+	public PageObjectEEManager(WebDriver driver) {
 
 		this.driver = driver;
 
@@ -22,7 +22,7 @@ public class PageObjectManager {
 
 		return (hbfsavepage == null) ? hbfsavepage = new HBFSavePage(driver) : hbfsavepage;
 	}
-	
+
 	public HBFDeletePage getHBFDeletePage() {
 
 		return (hbfdeletepage == null) ? hbfdeletepage = new HBFDeletePage(driver) : hbfdeletepage;

@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="44370" started-at="2019-02-14T03:49:36Z" finished-at="2019-02-14T03:50:20Z">
+  <suite name="Default suite" duration-ms="46275" started-at="2019-02-14T13:06:14Z" finished-at="2019-02-14T13:07:01Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.TestRunner@20322d26]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Equal experts hotel booking form" duration-ms="44370" started-at="2019-02-14T03:49:36Z" finished-at="2019-02-14T03:50:20Z">
+    <test name="Default test" duration-ms="46275" started-at="2019-02-14T13:06:14Z" finished-at="2019-02-14T13:07:01Z">
       <class name="runners.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runners.TestRunner@20322d26]" name="setUpClass" is-config="true" duration-ms="516" started-at="2019-02-14T03:49:36Z" finished-at="2019-02-14T03:49:36Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runners.TestRunner@20322d26]" name="setUpClass" is-config="true" duration-ms="436" started-at="2019-02-14T13:06:14Z" finished-at="2019-02-14T13:06:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.TestRunner@20322d26]" name="feature" duration-ms="43305" started-at="2019-02-14T03:49:37Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-02-14T03:50:20Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.TestRunner@20322d26]" name="feature" duration-ms="45305" started-at="2019-02-14T13:06:15Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-02-14T13:07:00Z">
           <params>
             <param index="0">
               <value>
@@ -25,15 +25,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="writeExtentReport()[pri:0, instance:runners.TestRunner@20322d26]" name="writeExtentReport" is-config="true" duration-ms="15" started-at="2019-02-14T03:50:20Z" finished-at="2019-02-14T03:50:20Z">
+        <test-method status="PASS" signature="writeExtentReport()[pri:0, instance:runners.TestRunner@20322d26]" name="writeExtentReport" is-config="true" duration-ms="14" started-at="2019-02-14T13:07:00Z" finished-at="2019-02-14T13:07:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- writeExtentReport -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.TestRunner@20322d26]" name="tearDownClass" is-config="true" duration-ms="387" started-at="2019-02-14T03:50:20Z" finished-at="2019-02-14T03:50:20Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.TestRunner@20322d26]" name="tearDownClass" is-config="true" duration-ms="384" started-at="2019-02-14T13:07:00Z" finished-at="2019-02-14T13:07:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- runners.TestRunner -->
-    </test> <!-- Equal experts hotel booking form -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
