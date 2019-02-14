@@ -6,6 +6,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pageObjects.HBFSavePage;
+import pageObjects.HomePage;
 import pageObjects.HBFDeletePage;
 
 public class HBFSaveAndDeletePageSteps {
@@ -18,12 +19,13 @@ public class HBFSaveAndDeletePageSteps {
 		 testContext = context;
 		 hbfSavePage = testContext.getPageObjectManager().getHBFSavePage();
 		 hbfDeletePage= testContext.getPageObjectManager().getHBFDeletePage();
+		 
 	 }
 	 
 	 
 	 @When("^EE: I enter all the mandatory fields viz \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\" in the page$")
 	 public void ee_I_enter_all_the_mandatory_fields_viz_in_the_page(String FirstName, String LastName, String Price, String DepositPaid, String CheckIn, String CheckOut) throws Throwable {
-		
+		 	
 			hbfSavePage.fill_PersonalDetails(FirstName,LastName,Price,DepositPaid,CheckIn,CheckOut);
 
 		}

@@ -1,5 +1,6 @@
 package pageObjects;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
@@ -20,6 +21,16 @@ public class HomePage {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
+		
+		
 	}
+		
+		public void zoomInZoomOut(){
+			 JavascriptExecutor js = (JavascriptExecutor) driver;
+			 //String FileReaderManager.getInstance().getConfigReader().getZoomSize()
+			 js.executeScript("document.body.style.zoom='" + FileReaderManager.getInstance().getConfigReader().getZoomSize() +"'");
+		}
+		
+		
 
 }

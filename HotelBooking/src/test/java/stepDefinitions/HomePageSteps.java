@@ -21,7 +21,8 @@ public class HomePageSteps {
 	@Given("^EE: I navigate to the EE page$")
 	public void ee_I_navigate_to_the_EE_page() throws Throwable {
 
-		homePage.navigateTo_HomePage(); 
+		homePage.navigateTo_HomePage();
+		homePage.zoomInZoomOut();
 
 	}
 	
