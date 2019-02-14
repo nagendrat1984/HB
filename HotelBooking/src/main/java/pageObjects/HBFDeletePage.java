@@ -24,7 +24,7 @@ public class HBFDeletePage {
 		//To identify the rows
 		List<WebElement> rows = getNumberOfRows();		
 		int rowsize = rows.size();
-		System.out.println("number of rows is" +rowsize);
+		//System.out.println("number of rows is" +rowsize);
 		
 		//actual line item in the HBF page starts from row 4
 		outerloop:
@@ -63,7 +63,7 @@ public class HBFDeletePage {
 		//To identify the rows
 		List<WebElement> rows = getNumberOfRows();		
 		int rowsize = rows.size();
-		System.out.println("row size is " + rowsize);
+		//System.out.println("row size is " + rowsize);
 		
 		for (int row = 4; row < rowsize; row++) {
 			//System.out.println("row count is" +row);
@@ -95,7 +95,7 @@ public class HBFDeletePage {
 		//To identify the rows
 		List<WebElement> rows = getNumberOfRows();		
 		int rowsize = rows.size();
-		System.out.println("row size is " + rowsize);
+		//System.out.println("row size is " + rowsize);
 		
 		for (int row = 4; row < rowsize; row++) {
 			String attribute = getIDOfParticularRow(row);
