@@ -2,6 +2,7 @@ package pageObjects;
 
 import java.util.List;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -125,7 +126,8 @@ public class HBFDeletePage {
 	}
 
 	public void clickDelete(String extracted) {
-		driver.findElement(By.xpath("//div[@id="+extracted+"]//input[@value='Delete']")).click();
+		//driver.findElement(By.xpath("//div[@id="+extracted+"]//input[@value='Delete']")).click();
+		driver.findElement(By.xpath("//div[@id="+extracted+"]//input[@value='Delete']")).sendKeys(Keys.ENTER);
 
 	}
 

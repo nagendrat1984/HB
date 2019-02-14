@@ -1,5 +1,6 @@
 package pageObjects;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -50,7 +51,8 @@ public class HBFSavePage {
 	}
 
 	public void clickOn_Save() throws InterruptedException {
-		btn_Save.click();
+		//btn_Save.click();
+		btn_Save.sendKeys(Keys.ENTER);
 		Thread.sleep(5000);
 	}
 
